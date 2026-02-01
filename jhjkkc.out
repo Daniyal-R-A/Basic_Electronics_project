@@ -1,0 +1,145 @@
+
+**** 11/30/22 03:06:12 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-jhjkkc"  [ e:\habib\year2 projects\be amplifier\be_final_project-PSpiceFiles\SCHEMATIC1\jhjkkc.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "jhjkkc.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\ABC\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BE_FINAL_PROJECT
+R_R2         0 N00282  2.2k TC=0,0 
+V_V2         N00919 0  
++SIN 0 10m 1k 0 0 0
+X_Q1         N01027 N00919 N00282 awb2n3700 PARAMS:                            
++                 
+R_R3         N01027 N01070  1k TC=0,0 
+V_V3         N01070 0 0Vdc
+
+**** RESUMING jhjkkc.cir ****
+.END
+
+**** 11/30/22 03:06:12 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-jhjkkc"  [ e:\habib\year2 projects\be amplifier\be_final_project-PSpiceFiles\SCHEMATIC1\jhjkkc.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q1.model4     
+               NPN             
+       LEVEL    1            
+          IS   11.770000E-15 
+          EG    1.11         
+          BF  170            
+          NF     .863        
+         VAF  200            
+         IKF    1            
+         ISE  603.450000E-15 
+          NE    1.369        
+          BR    1.42         
+          NR     .863        
+         VAR  500            
+          NC    1            
+         ISS    0            
+          RB    6.66         
+         RBM    6.66         
+          RE     .1          
+          RC     .601        
+         CJE   65.000000E-12 
+         VJE    1.66         
+         MJE     .567        
+         CJC   26.000000E-12 
+         VJC    1.333        
+         MJC     .496        
+        XCJC     .5          
+         CJS    0            
+         VJS     .7          
+         MJS     .5          
+          TF  796.000000E-12 
+         XTF   35.6          
+         VTF     .9186       
+         ITF     .4373       
+          TR  500.600000E-09 
+         XTB    1.9283       
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 11/30/22 03:06:12 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-jhjkkc"  [ e:\habib\year2 projects\be amplifier\be_final_project-PSpiceFiles\SCHEMATIC1\jhjkkc.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00282)-91.44E-27 (N00919)    0.0000 (N01027) 800.9E-30 (N01070)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         4.076E-29
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/30/22 03:06:12 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-jhjkkc"  [ e:\habib\year2 projects\be amplifier\be_final_project-PSpiceFiles\SCHEMATIC1\jhjkkc.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .11
+

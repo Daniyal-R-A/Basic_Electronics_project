@@ -1,0 +1,8 @@
+* source BE_FINAL_PROJECT
+R_R2         0 N00282  2.2k TC=0,0 
+V_V2         N00919 0  
++SIN 0 10m 1k 0 0 0
+X_Q1         N01027 N00919 N00282 awb2n3700 PARAMS:                            
++                 
+R_R3         N01027 N01070  1k TC=0,0 
+V_V3         N01070 0 0Vdc
